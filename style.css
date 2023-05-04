@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eaeef1;
+}
+img{
+    max-width: 100%;
+}
+header{
+    border-top: 1px solid #777777;
+}
+.header-text span{
+    color: #0d6efd;
+    display: block;
+    
+}
+.header-text h2{
+    position: relative;
+    text-transform: capitalize;
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+.header-text h2::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 95px;
+    height: 3px;
+    width: 60px;
+    background-color: #0d6efd;
+}
+.header-text p{}
+
+.p-table{
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    border-radius: 5px;
+    transition: .4s;
+}
+.p-table span{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.p-table h1{
+    margin-bottom: 80px;
+    position: relative;
+    display: inline-block;
+}
+.p-table h1:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 120px;
+    bottom: -65px;
+    left:-34px;
+    background-color: #bfc7d2;
+}
+.p-table p{
+    padding: 10px 0;
+    color: #767676;
+    font-size: 18px;
+    transition: .4s;
+}
+.p-table:hover{
+    color: #fff;
+    background-color: #0d6efd;
+}
+.p-table:hover p{
+    color: #fff;
+}
+.p-table:hover .default-btn{
+    color: #0d6efd;
+    background-color:#fff;
+}
+.default-btn{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: #0d6efd;
+    padding: 10px 14px;
+    border-radius: 18px;
+    display: inline-block;
+    position: relative;
+    transition: .4s;
+    z-index: 1;
+}
+.default-btn:hover{
+    color: white !important;
+}
+.default-btn::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    border-radius: 18px;
+    top: 0;
+    left: 0;
+    background-color: #0d6efd;
+    transition: .4s;
+    z-index: -1;
+}
+.default-btn:hover::after{
+    width: 100%;
+}
+
+.slider{
+    background: url(https://i.ibb.co/mh7H7Gc/free-bg.jpg) no-repeat center;
+    background-size:cover;
+    padding: 130px 0;
+    position: relative;
+    z-index: 1;
+}
+.slider::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(13, 110, 253,.7) ;
+    z-index: -1;
+}
+.slider-text{
+    color: #eaeef1;
+}
+.slider-text span{}
+.slider-text h2{
+    margin-bottom:50px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
+.slider-text h2::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    bottom: -20px;
+    left: 252px;
+    background-color: #fff;
+}
+.slider-text p{
+    margin-bottom: 25px;
+}
+.slider-text a{
+    text-decoration: none;
+    color: #0d6efd;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 18px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid transparent;
+    transition: .4s;
+    z-index: 1;
+}
+.slider-text a::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    border-radius: 18px;
+    top: 0;
+    left: 0;
+    background-color: #0d6efd;
+    transition: .4s;
+    z-index: -1;
+}
+.slider-text a:hover::after{
+    width: 100%;
+}
+.slider-text a:hover{
+    border: 1px solid white;
+    color: white;
+}
+.footer-left{
+    padding: 40px;
+    background-color: #0d6efd;
+    border-radius: 6px;
+}
+.footer-text{
+    margin-right: 30px;
+   
+    color: white;
+    flex-basis:60%;
+}
+.footer-text form input{
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 18px;
+}
+
+.footer-button a{
+    text-decoration: none;
+    color: white;
+    padding: 6px 16px;
+    position: relative;
+    bottom: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px;
+    height: 236px;
+    box-shadow: 0 0 15px 2px rgba(0,0,0,.1);
+    border-radius: 5px;
+}
+.footer-right b{
+    font-size: 18px;
+    word-spacing: 3px;
+}
+.fr-button .btn{
+    border-radius: 15px;
+    text-transform: capitalize;
+    font-weight: 18px;
+    padding: 4px 16px;
+}
